@@ -1,4 +1,4 @@
 import { defineConfig} from "vite";
 export default defineConfig({
-    base:'/room-rent/'
+    base:'/houserent-using-tailwindcss/'
 })
