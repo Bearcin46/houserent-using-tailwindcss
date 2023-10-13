@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your's</title>
+  </head>
+  <body class="">
+    <!--css-->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./dist/assets/index-7a65480e.css" />
+    <!--main div-->
+    <div>
+      <!--logo-->
+      <section class="bg-[#003b95] flex items-center justify-between px-6 py-1">
+        <div class="flex items-center p-5">
+          <div class="h-14 w-14">
+            <img src="./public/images/logo.png" alt="" />
+          </div>
+          <p class="text-white font-bold text-2xl">OOK YOUR'S</p>
+        </div>
+        <div class="flex items-center gap-6">
+          <!--buy-->
+          <div
+            class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
+          >
+            <span class="text-white">Buy</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="text-white fill-current"
+            >
+              <path
+                d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+              />
+            </svg>
+          </div>
+          <!--sell-->
+          <div
+            class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
+          >
+            <span class="text-white">Sell</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="text-white fill-current"
+            >
+              <path
+                d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+              />
+            </svg>
+          </div>
+          <!--rent-->
+          <div
+            class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
+          >
+            <span class="text-white">Rent</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="text-white fill-current"
+            >
+              <path
+                d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+              />
+            </svg>
+          </div>
+          <!--post-->
+          <div
+            class="flex items-center justify-center py-2 px-2 border-2 border-white hover:border-gray-400 rounded"
+          >
+            <span class="text-white">Post Your Property</span>
+          </div>
+          <!--heart-->
+          <div class="relative">
+            <!--dot-->
+            <div
+              class="w-2 h-2 bg-red-500 rounded-full absolute right-0 top-0.5"
+            ></div>
+            <!--like-->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              class="text-white fill-current w-7 h-7 hover:text-red-600"
+            >
+              <path
+                fill="currentColor"
+                d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5C22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1l-.1-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05z"
+              />
+            </svg>
+          </div>
+
+          <!--menu-->
+          <div class="flex items-center gap-3 w-30 px-2 py-2 hover:bg-blue-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              class="text-white fill-current"
+            >
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+            <span class="text-white">Menu</span>
+          </div>
+        </div>
+      </section>
+      <!--banner-->
+      <section
+        class="bg-hero-pattern bg-left-top flex items-center justify-center bg-no-repeat bg-cover"
+      >
+        <div
+          class="flex flex-col items-center justify-center py-36 gap-6 relative"
+        >
+          <h1 class="text-white font-bold text-6xl text-center">
+            Grab your's choice of House
+          </h1>
+          <div class="flex items-center justify-center">
+            <!-- <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              class="absolute bottom-0 w-6 text-gray-500 fill-current"
+            >
+              <path
+                d="M9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16Zm0-2q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z"
+              />
+            </svg> -->
+            <input
+              type="text"
+              placeholder="Search"
+              class="px-10 py-2 outline-none text-gray-400 rounded bg-white w-[500px]"
+            />
+            <div class="bg-red-400 w-20 p-2 rounded">
+              <span>Search</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--ads-->
+      <section class="bg-gradient-to-r from-rose-100 to-teal-100 h-30 p-5">
+        <p class="text-center">ads goes here</p>
+      </section>
+
+      <div>
+        <!--main section-->
+        <div class="flex gap-5 flex-col">
+          <section
+            class="w-fit max-h-fit px-4 py-3 border-2 rounded border-blue-900 mt-3"
+          >
+            <div class="flex items-center justify-between gap-7">
+              <span class="text-red-700 font-bold">Filter</span>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <g fill="red">
+                    <path d="M72 104H24V56Z" opacity=".2" />
+                    <path
+                      d="M195.88 60.08A96.08 96.08 0 0 0 60.25 60L49.31 70L29.66 50.3A8 8 0 0 0 16 56v48a8 8 0 0 0 8 8h48a8 8 0 0 0 5.66-13.66l-17-17l10.54-9.65a3.07 3.07 0 0 0 .26-.25a80 80 0 1 1 1.65 114.78a8 8 0 0 0-11 11.63A95.38 95.38 0 0 0 128 224h1.32a96 96 0 0 0 66.56-163.92ZM32 96V75.28L52.69 96Z"
+                    />
+                  </g>
+                </svg>
+                <span class="text-red-700 font-bold">Reset</span>
+              </div>
+            </div>
+            <hr class="text-green-800 fill-current" />
+            <!--option 1-->
+            <div class="p-2">
+              <h2 class="font-bold mb-1">Room Type</h2>
+              <div class="flex items-center justify-between p-2 gap-7">
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Shared room</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Single room</label
+                  >
+                </div>
+              </div>
+            </div>
+            <!--option 2-->
+            <div class="p-2">
+              <h2 class="font-bold mb-1">Tenant Type</h2>
+              <div class="flex items-center justify-between p-2 gap-7">
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Male</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Female</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--option3-->
+            <div class="p-2">
+              <label
+                for="medium-range"
+                class="block mb-1 font-bold text-gray-900 dark:text-white"
+                >Rent range : 0 - 1 Lakhs</label
+              >
+              <div class="p-2">
+                <input
+                  id="medium-range"
+                  type="range"
+                  value="0"
+                  class="w-48 h-1 mb-2 bg-red-500 rounded-lg appearance-none cursor-pointer dark:bg-emerald-900"
+                />
+              </div>
+            </div>
+
+            <!--option 4-->
+            <div class="p-2">
+              <h2 class="font-bold mb-1">Furnishing</h2>
+              <div class="flex items-center justify-between px-2 py-2 gap-7">
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Full</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Semi</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >None</label
+                  >
+                </div>
+              </div>
+            </div>
+            <!--option 5-->
+            <div class="p-2">
+              <h2 class="font-bold mb-1">Property Type</h2>
+              <div
+                class="flex items-left justify-between px-2 py-2 gap-3 flex-col"
+              >
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Apartment</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Independent House / Villa</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="checked-checkbox"
+                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Gated Community / Villa</label
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div
+            class="flex flex-1 border-2 border-blue-900 py-3 px-4 w-fit mt-3 rounded"
+          >
+            <div>
+              <!--house rent-->
+              <section
+                class="flex flex-1 border-2 border-blue-900 py-3 px-4 w-fit mt-3 rounded"
+              >
+                <div>
+                  <div class="w-full">
+                    <h2>Only for nuclear family</h2>
+                  </div>
+                  <hr class="mt-2" />
+                  <div class="w-full flex items-center justify-between gap-5">
+                    <h2>Address : Taman Perai Utama, Perai</h2>
+                    <h2>Rs. 14,000/Month</h2>
+                  </div>
+                  <hr class="mt-2 mb-2" />
+                  <div class="flex justify-between">
+                    <div class="h-32 w-32 flex items-center">
+                      <img src="./public/images/banner.jpg" alt="" />
+                    </div>
+                    <div
+                      class="flex border-2 border-blue-900 flex-col gap-2 p-2"
+                    >
+                      <div class="flex flex-col gap-2">
+                        <p>Fully Furnished</p>
+                        <p>2BHK</p>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <p>Attached bathrooms</p>
+                        <p>Available immediately</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="bg-red-700 p-4 w-full mt-5 text-white hover:bg-emerald-800"
+                    >
+                      Get Owner details
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-center space-x-5 mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="hover:text-emerald-800 cursor-pointer text-red-700 fill-current"
+                    >
+                      <path
+                        d="M240 94c0 70-103.79 126.66-108.21 129a8 8 0 0 1-7.58 0C119.79 220.66 16 164 16 94a62.07 62.07 0 0 1 62-62c20.65 0 38.73 8.88 50 23.89C139.27 40.88 157.35 32 178 32a62.07 62.07 0 0 1 62 62Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="text-red-700 fill-current hover:text-emerald-800"
+                    >
+                      <path
+                        d="M32.14 38.88A12 12 0 0 0 28 48v168a12 12 0 0 0 24 0v-42.28c22.84-17.12 42.1-9.12 70.68 5c16.23 8 34.74 17.2 54.8 17.2c14.72 0 30.28-4.94 46.38-18.88A12 12 0 0 0 228 168V48a12 12 0 0 0-19.86-9.07c-24.71 21.41-44.53 13.31-74.82-1.68c-28.13-13.98-63.15-31.31-101.18 1.63ZM204 162.26c-22.84 17.13-42.1 9.11-70.68-5C110.16 145.76 82.33 132 52 145.87V53.69c22.84-17.12 42.1-9.12 70.68 5c16.23 8 34.74 17.2 54.8 17.2A63 63 0 0 0 204 70.08Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="text-red-700 fill-current hover:text-emerald-800"
+                    >
+                      <path
+                        d="m236.24 107.76l-80-80A6 6 0 0 0 146 32v42.2c-54.48 3.59-120.39 55-127.93 120.66a10 10 0 0 0 17.23 8C46.56 190.85 87 152.6 146 150.13V192a6 6 0 0 0 10.24 4.24l80-80a6 6 0 0 0 0-8.48ZM158 177.52V144a6 6 0 0 0-6-6c-27.73 0-54.76 7.25-80.32 21.55a193.38 193.38 0 0 0-40.81 30.65c4.7-26.56 20.16-52 44-72.27C98.47 97.94 127.29 86 152 86a6 6 0 0 0 6-6V46.49L223.51 112Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </section>
+              <!--house rent-->
+              <section
+                class="flex flex-1 border-2 border-blue-900 py-3 px-4 w-fit mt-3 rounded"
+              >
+                <div>
+                  <div class="w-full">
+                    <h2>Only for nuclear family</h2>
+                  </div>
+                  <hr class="mt-2" />
+                  <div class="w-full flex items-center justify-between gap-5">
+                    <h2>Address : Taman Perai Utama, Perai</h2>
+                    <h2>Rs. 14,000/Month</h2>
+                  </div>
+                  <hr class="mt-2 mb-2" />
+                  <div class="flex justify-between">
+                    <div class="h-32 w-32 flex items-center">
+                      <img src="./public/images/banner.jpg" alt="" />
+                    </div>
+                    <div
+                      class="flex border-2 border-blue-900 flex-col gap-2 p-2"
+                    >
+                      <div class="flex flex-col gap-2">
+                        <p>Fully Furnished</p>
+                        <p>2BHK</p>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <p>Attached bathrooms</p>
+                        <p>Available immediately</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="bg-red-700 p-4 w-full mt-5 text-white hover:bg-emerald-800"
+                    >
+                      Get Owner details
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-center space-x-5 mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="hover:text-emerald-800 cursor-pointer text-red-700 fill-current"
+                    >
+                      <path
+                        d="M240 94c0 70-103.79 126.66-108.21 129a8 8 0 0 1-7.58 0C119.79 220.66 16 164 16 94a62.07 62.07 0 0 1 62-62c20.65 0 38.73 8.88 50 23.89C139.27 40.88 157.35 32 178 32a62.07 62.07 0 0 1 62 62Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="text-red-700 fill-current hover:text-emerald-800"
+                    >
+                      <path
+                        d="M32.14 38.88A12 12 0 0 0 28 48v168a12 12 0 0 0 24 0v-42.28c22.84-17.12 42.1-9.12 70.68 5c16.23 8 34.74 17.2 54.8 17.2c14.72 0 30.28-4.94 46.38-18.88A12 12 0 0 0 228 168V48a12 12 0 0 0-19.86-9.07c-24.71 21.41-44.53 13.31-74.82-1.68c-28.13-13.98-63.15-31.31-101.18 1.63ZM204 162.26c-22.84 17.13-42.1 9.11-70.68-5C110.16 145.76 82.33 132 52 145.87V53.69c22.84-17.12 42.1-9.12 70.68 5c16.23 8 34.74 17.2 54.8 17.2A63 63 0 0 0 204 70.08Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="text-red-700 fill-current hover:text-emerald-800"
+                    >
+                      <path
+                        d="m236.24 107.76l-80-80A6 6 0 0 0 146 32v42.2c-54.48 3.59-120.39 55-127.93 120.66a10 10 0 0 0 17.23 8C46.56 190.85 87 152.6 146 150.13V192a6 6 0 0 0 10.24 4.24l80-80a6 6 0 0 0 0-8.48ZM158 177.52V144a6 6 0 0 0-6-6c-27.73 0-54.76 7.25-80.32 21.55a193.38 193.38 0 0 0-40.81 30.65c4.7-26.56 20.16-52 44-72.27C98.47 97.94 127.29 86 152 86a6 6 0 0 0 6-6V46.49L223.51 112Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!--second set in right-->
+            <div>
+              <!--house rent-->
+              <section
+                class="flex flex-1 border-2 border-blue-900 py-3 px-4 w-fit mt-3 rounded"
+              >
+                <div>
+                  <div class="w-full">
+                    <h2>Only for nuclear family</h2>
+                  </div>
+                  <hr class="mt-2" />
+                  <div class="w-full flex items-center justify-between gap-5">
+                    <h2>Address : Taman Perai Utama, Perai</h2>
+                    <h2>Rs. 14,000/Month</h2>
+                  </div>
+                  <hr class="mt-2 mb-2" />
+                  <div class="flex justify-between">
+                    <div class="h-32 w-32 flex items-center">
+                      <img src="./public/images/banner.jpg" alt="" />
+                    </div>
+                    <div
+                      class="flex border-2 border-blue-900 flex-col gap-2 p-2"
+                    >
+                      <div class="flex flex-col gap-2">
+                        <p>Fully Furnished</p>
+                        <p>2BHK</p>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <p>Attached bathrooms</p>
+                        <p>Available immediately</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="bg-red-700 p-4 w-full mt-5 text-white hover:bg-emerald-800"
+                    >
+                      Get Owner details
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-center space-x-5 mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="hover:text-emerald-800 cursor-pointer text-red-700 fill-current"
+                    >
+                      <path
+                        d="M240 94c0 70-103.79 126.66-108.21 129a8 8 0 0 1-7.58 0C119.79 220.66 16 164 16 94a62.07 62.07 0 0 1 62-62c20.65 0 38.73 8.88 50 23.89C139.27 40.88 157.35 32 178 32a62.07 62.07 0 0 1 62 62Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="text-red-700 fill-current hover:text-emerald-800"
+                    >
+                      <path
+                        d="M32.14 38.88A12 12 0 0 0 28 48v168a12 12 0 0 0 24 0v-42.28c22.84-17.12 42.1-9.12 70.68 5c16.23 8 34.74 17.2 54.8 17.2c14.72 0 30.28-4.94 46.38-18.88A12 12 0 0 0 228 168V48a12 12 0 0 0-19.86-9.07c-24.71 21.41-44.53 13.31-74.82-1.68c-28.13-13.98-63.15-31.31-101.18 1.63ZM204 162.26c-22.84 17.13-42.1 9.11-70.68-5C110.16 145.76 82.33 132 52 145.87V53.69c22.84-17.12 42.1-9.12 70.68 5c16.23 8 34.74 17.2 54.8 17.2A63 63 0 0 0 204 70.08Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="text-red-700 fill-current hover:text-emerald-800"
+                    >
+                      <path
+                        d="m236.24 107.76l-80-80A6 6 0 0 0 146 32v42.2c-54.48 3.59-120.39 55-127.93 120.66a10 10 0 0 0 17.23 8C46.56 190.85 87 152.6 146 150.13V192a6 6 0 0 0 10.24 4.24l80-80a6 6 0 0 0 0-8.48ZM158 177.52V144a6 6 0 0 0-6-6c-27.73 0-54.76 7.25-80.32 21.55a193.38 193.38 0 0 0-40.81 30.65c4.7-26.56 20.16-52 44-72.27C98.47 97.94 127.29 86 152 86a6 6 0 0 0 6-6V46.49L223.51 112Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </section>
+              <!--house rent-->
+              <section
+                class="flex flex-1 border-2 border-blue-900 py-3 px-4 w-fit mt-3 rounded"
+              >
+                <div>
+                  <div class="w-full">
+                    <h2>Only for nuclear family</h2>
+                  </div>
+                  <hr class="mt-2" />
+                  <div class="w-full flex items-center justify-between gap-5">
+                    <h2>Address : Taman Perai Utama, Perai</h2>
+                    <h2>Rs. 14,000/Month</h2>
+                  </div>
+                  <hr class="mt-2 mb-2" />
+                  <div class="flex justify-between">
+                    <div class="h-32 w-32 flex items-center">
+                      <img src="./public/images/banner.jpg" alt="" />
+                    </div>
+                    <div
+                      class="flex border-2 border-blue-900 flex-col gap-2 p-2"
+                    >
+                      <div class="flex flex-col gap-2">
+                        <p>Fully Furnished</p>
+                        <p>2BHK</p>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <p>Attached bathrooms</p>
+                        <p>Available immediately</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="bg-red-700 p-4 w-full mt-5 text-white hover:bg-emerald-800"
+                    >
+                      Get Owner details
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-center space-x-5 mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="hover:text-emerald-800 cursor-pointer text-red-700 fill-current"
+                    >
+                      <path
+                        d="M240 94c0 70-103.79 126.66-108.21 129a8 8 0 0 1-7.58 0C119.79 220.66 16 164 16 94a62.07 62.07 0 0 1 62-62c20.65 0 38.73 8.88 50 23.89C139.27 40.88 157.35 32 178 32a62.07 62.07 0 0 1 62 62Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="text-red-700 fill-current hover:text-emerald-800"
+                    >
+                      <path
+                        d="M32.14 38.88A12 12 0 0 0 28 48v168a12 12 0 0 0 24 0v-42.28c22.84-17.12 42.1-9.12 70.68 5c16.23 8 34.74 17.2 54.8 17.2c14.72 0 30.28-4.94 46.38-18.88A12 12 0 0 0 228 168V48a12 12 0 0 0-19.86-9.07c-24.71 21.41-44.53 13.31-74.82-1.68c-28.13-13.98-63.15-31.31-101.18 1.63ZM204 162.26c-22.84 17.13-42.1 9.11-70.68-5C110.16 145.76 82.33 132 52 145.87V53.69c22.84-17.12 42.1-9.12 70.68 5c16.23 8 34.74 17.2 54.8 17.2A63 63 0 0 0 204 70.08Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      class="text-red-700 fill-current hover:text-emerald-800"
+                    >
+                      <path
+                        d="m236.24 107.76l-80-80A6 6 0 0 0 146 32v42.2c-54.48 3.59-120.39 55-127.93 120.66a10 10 0 0 0 17.23 8C46.56 190.85 87 152.6 146 150.13V192a6 6 0 0 0 10.24 4.24l80-80a6 6 0 0 0 0-8.48ZM158 177.52V144a6 6 0 0 0-6-6c-27.73 0-54.76 7.25-80.32 21.55a193.38 193.38 0 0 0-40.81 30.65c4.7-26.56 20.16-52 44-72.27C98.47 97.94 127.29 86 152 86a6 6 0 0 0 6-6V46.49L223.51 112Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
