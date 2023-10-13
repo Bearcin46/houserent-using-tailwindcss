@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Your's</title>
-    <link rel="stylesheet" href="/assets/index-7a65480e.css">
+    <link rel="stylesheet" href="/assets/index-909d86f3.css">
   </head>
   <body class="">
     <!--css-->
     
+    <!-- <link rel="stylesheet" href="./dist/assets/index-7a65480e.css" /> -->
     <!--main div-->
     <div>
       <!--logo-->
@@ -25,7 +26,7 @@
           <div
             class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
           >
-            <span class="text-white">Buy</span>
+            <span class="text-white text-lg font-semibold">Buy</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -42,7 +43,7 @@
           <div
             class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
           >
-            <span class="text-white">Sell</span>
+            <span class="text-white text-lg font-semibold">Sell</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -59,7 +60,7 @@
           <div
             class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
           >
-            <span class="text-white">Rent</span>
+            <span class="text-white text-lg font-semibold">Rent</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -76,7 +77,9 @@
           <div
             class="flex items-center justify-center py-2 px-2 border-2 border-white hover:border-gray-400 rounded"
           >
-            <span class="text-white">Post Your Property</span>
+            <span class="text-white text-lg font-semibold"
+              >Post Your Property</span
+            >
           </div>
           <!--heart-->
           <div class="relative">
@@ -87,8 +90,8 @@
             <!--like-->
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width="36"
+              height="36"
               viewBox="0 0 24 24"
               class="text-white fill-current w-7 h-7 hover:text-red-600"
             >
@@ -110,7 +113,7 @@
             >
               <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
             </svg>
-            <span class="text-white">Menu</span>
+            <span class="text-white text-lg font-semibold">Menu</span>
           </div>
         </div>
       </section>
@@ -141,7 +144,9 @@
               placeholder="Search"
               class="px-10 py-2 outline-none text-gray-400 rounded bg-white w-[500px]"
             />
-            <div class="bg-red-400 w-20 p-2 rounded">
+            <div
+              class="bg-red-700 w-20 h-10 p-2 rounded text-white font-semibold"
+            >
               <span>Search</span>
             </div>
           </div>
@@ -153,9 +158,10 @@
         <p class="text-center">ads goes here</p>
       </section>
 
-      <div>
+      <div class="flex   justify-center">
         <!--main section-->
-        <div class="flex gap-5 flex-col">
+        <!--left-->
+
           <section
             class="w-fit max-h-fit px-4 py-3 border-2 rounded border-blue-900 mt-3"
           >
@@ -364,11 +370,11 @@
               </div>
             </div>
           </section>
-
+          <!--midlle-->
           <div
-            class="flex flex-1 border-2 border-blue-900 py-3 px-4 w-fit mt-3 rounded"
+            class="flex flex-col border-1 border-blue-900 py-3 px-4 w-fit rounded flex-1 items-center"
           >
-            <div>
+            <div class="flex gap-3">
               <!--house rent-->
               <section
                 class="flex flex-1 border-2 border-blue-900 py-3 px-4 w-fit mt-3 rounded"
@@ -526,7 +532,7 @@
             </div>
 
             <!--second set in right-->
-            <div>
+            <div class="flex gap-3">
               <!--house rent-->
               <section
                 class="flex flex-1 border-2 border-blue-900 py-3 px-4 w-fit mt-3 rounded"
