@@ -16,18 +16,18 @@
     <div>
       <!--logo-->
       <section
-        class="bg-[#003b95] flex items-center justify-between xl:px-20 py-1 lg:px-16 w-full"
+        class="bg-[#003b95] flex items-center justify-between xl:px-20 lg:px-12 py-1"
       >
         <div class="flex items-center px-5 py-2">
-          <div class="h-14 w-14">
+          <div class="md:h-14 md:w-14 h-8 w-8">
             <img src="./public/images/logo.png" alt="" />
           </div>
-          <p class="text-white font-bold text-2xl">OOK YOUR'S</p>
+          <p class="text-white font-bold md:text-2xl texl-lg">OOK YOUR'S</p>
         </div>
-        <div class="flex items-center gap-6">
+        <div class="flex items-center xl:gap-6 lg:gap-3 md:gap-2">
           <!--buy-->
           <div
-            class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
+            class="lg:flex hidden items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
           >
             <span class="text-white text-lg font-semibold">Buy</span>
             <svg
@@ -44,7 +44,7 @@
           </div>
           <!--sell-->
           <div
-            class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
+            class="lg:flex hidden items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
           >
             <span class="text-white text-lg font-semibold">Sell</span>
             <svg
@@ -61,7 +61,7 @@
           </div>
           <!--rent-->
           <div
-            class="flex items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
+            class="lg:flex hidden items-center justify-center py-2 px-2 hover:border-2 border-white rounded-full w-20"
           >
             <span class="text-white text-lg font-semibold">Rent</span>
             <svg
@@ -78,7 +78,7 @@
           </div>
           <!--post-->
           <div
-            class="flex items-center justify-center py-2 px-2 border-2 border-white hover:border-gray-400 rounded"
+            class="lg:flex hidden items-center justify-center py-2 px-2 border-2 border-white hover:border-gray-400 rounded"
           >
             <span class="text-white text-lg font-semibold"
               >Post Your Property</span
@@ -116,7 +116,9 @@
             >
               <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
             </svg>
-            <span class="text-white text-lg font-semibold">Menu</span>
+            <span class="text-white text-lg font-semibold sm:block hidden"
+              >Menu</span
+            >
           </div>
         </div>
       </section>
@@ -125,9 +127,11 @@
         class="bg-hero-pattern flex items-center justify-center bg-no-repeat bg-center bg-cover"
       >
         <div
-          class="flex flex-col items-center justify-center py-60 gap-6 relative"
+          class="flex flex-col items-center justify-center py-32 md:py-60 gap-6 relative"
         >
-          <h1 class="text-white font-bold text-6xl text-center">
+          <h1
+            class="text-white font-bold md:text-6xl sm:text-4xl text-2xl text-center"
+          >
             Grab your's choice of House
           </h1>
           <div class="flex items-center justify-center">
@@ -145,7 +149,7 @@
             <input
               type="text"
               placeholder="Search"
-              class="px-10 py-2 outline-none text-gray-400 rounded bg-white w-[500px]"
+              class="px-10 py-2 outline-none text-gray-400 rounded bg-white md:w-[500px] sm:w-[400px]"
             />
             <div
               class="bg-red-700 w-20 h-10 p-2 rounded text-white font-semibold"
@@ -166,12 +170,14 @@
         </p>
       </section>
 
-      <div class="flex justify-center p-5 gap-x-3 w-full flex-1">
+      <div
+        class="sm:flex-row flex flex-col justify-center p-5 gap-x-3 w-full flex-1 sm:items-stretch items-center"
+      >
         <!--main section-->
         <!--left-->
 
         <section
-          class="w-fit h-fit px-4 py-3 mt-3 border-2 rounded border-blue-900 bg- text-sm text-left bg-white"
+          class="sm:w-fit h-fit px-4 py-3 mt-3 border-2 rounded border-blue-900 bg- text-sm text-left bg-white"
         >
           <div class="flex items-center justify-between gap-7">
             <span class="text-red-700 font-bold text-xl">Filter</span>
@@ -379,13 +385,15 @@
           </div>
         </section>
         <!--midlle-->
-        <div class="flex flex-col py-1 px-4 w-fit rounded gap-4 flex-grow">
-          <div class="flex gap-5 w-full">
+        <div
+          class="flex sm:flex-col py-1 px-4 w-fit rounded gap-4 flex-grow flex-col"
+        >
+          <div class="flex sm:flex-row flex-col gap-5 w-full">
             <!--house rent-->
             <section
               class="flex border-2 py-3 px-4 w-full items-center justify-center mt-3 rounded bg-white hover:bg-gray-200 shadow-lg shadow-gray-400"
             >
-              <div>
+              <div class="2xl:w-full">
                 <div class="w-full">
                   <h2><b>Only for nuclear family</b></h2>
                 </div>
@@ -520,7 +528,7 @@
             <section
               class="flex border-2 py-3 px-4 w-full items-center justify-center mt-3 rounded bg-white hover:bg-gray-200 shadow-lg shadow-gray-400"
             >
-              <div>
+              <div class="2xl:w-full">
                 <div class="w-full">
                   <h2><b>Only for nuclear family</b></h2>
                 </div>
@@ -654,12 +662,12 @@
           </div>
 
           <!--second set in right-->
-          <div class="flex gap-5">
+          <div class="flex sm:flex-row flex-col gap-5">
             <!--house rent-->
             <section
               class="flex border-2 py-3 px-4 w-full items-center justify-center mt-3 rounded bg-white hover:bg-gray-200 shadow-lg shadow-gray-400"
             >
-              <div>
+              <div class="2xl:w-full">
                 <div class="w-full">
                   <h2><b>Only for nuclear family</b></h2>
                 </div>
@@ -794,7 +802,7 @@
             <section
               class="flex border-2 py-3 px-4 w-full items-center justify-center mt-3 rounded bg-white hover:bg-gray-200 shadow-lg shadow-gray-400"
             >
-              <div>
+              <div class="2xl:w-full">
                 <div class="w-full">
                   <h2><b>Only for nuclear family</b></h2>
                 </div>
@@ -1077,18 +1085,22 @@
 
       <!--section-->
       <div
-        class="flex items-center justify-center bg-gradient-to-r from-gray-700 via-blue-800 to-gray-900 py-8 flex-grow"
+        class="sm:flex-row flex flex-col items-center justify-center bg-gradient-to-r from-gray-700 via-blue-800 to-gray-900 py-8 px-4"
       >
         <section
-          class="border-none px-4 py-3 shadow-lg shadow-gray-900 w-fit flex rounded flex-col bg-white"
+          class="border-none sm:py-3 px-5 shadow-lg shadow-gray-900 w-full sm:flex rounded flex-col bg-white"
         >
-          <h1 class="text-left"><b>Trending PG Rooms by Owners</b></h1>
+          <h1 class="text-center pt-2 lg:text-left">
+            <b>Trending PG Rooms by Owners</b>
+          </h1>
           <hr class="mt-2" />
           <!--content-->
-          <div class="flex items-center space-x-7 py-2">
+          <div
+            class="sm:flex-row flex flex-col items-center space-x-7 py-2 gap-x-3"
+          >
             <!--div1-->
-            <div>
-              <div class="flex items-center gap-2">
+            <div class="">
+              <div class="sm:flex-row items-center gap-2 flex flex-nowrap">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -1130,15 +1142,17 @@
                 </svg>
                 <p class="hover:text-green-700">No Commision</p>
               </div>
-              <div class="mt-8">
+              <div class="sm:mt-8 mt-6">
                 <span class="text-red-700"><b>Explore All PG Homes</b></span>
               </div>
             </div>
 
             <!--div2-->
-            <div class="flex items-center space-x-7 py-2">
+            <div
+              class="sm:flex-row sm:justify-between md:flex-row sm:items-center flex flex-col w-full flex-1 sm:gap-x-8 gap-y-4 mt-3"
+            >
               <div
-                class="border-none shadow-lg shadow-black w-fit h-fit px-3 py-3 rounded space-y-2 bg-blue-50"
+                class="border-none shadow-lg shadow-black w-full sm:w-fit h-fit px-3 py-3 rounded space-y-2 bg-blue-50 flex-grow"
               >
                 <img
                   src="./public/images/pg1.jpeg"
@@ -1162,7 +1176,7 @@
               <!--second-->
 
               <div
-                class="border-none shadow-lg shadow-black w-fit h-fit px-3 py-3 rounded space-y-2 bg-blue-50"
+                class="border-none shadow-lg shadow-black w-full sm:w-fit h-full px-3 py-3 rounded space-y-2 bg-blue-50 flex-grow"
               >
                 <img
                   src="./public/images/pg2.jpeg"
@@ -1185,7 +1199,7 @@
               <!--third-->
 
               <div
-                class="border-none shadow-lg shadow-black w-fit h-fit px-3 py-3 rounded space-y-2 relative bg-blue-50"
+                class="border-none shadow-lg shadow-black w-full sm:w-fit h-fit px-3 py-3 rounded space-y-2 relative bg-blue-50 flex-grow"
               >
                 <img
                   src="./public/images/pg3.jpeg"
@@ -1206,7 +1220,7 @@
                 </button>
               </div>
               <div
-                class="flex items-center justify-center w-16 h-16 bg-slate-300 rounded-full bottom-0-0 hover:bg-slate-500 shadow-xl shadow-gray-600"
+                class="sm:flex flex flex-col items-center justify-center w-16 h-16 bg-slate-300 rounded-full bottom-0-0 hover:bg-slate-500 shadow-xl shadow-gray-600"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
